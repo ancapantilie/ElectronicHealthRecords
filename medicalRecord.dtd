@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!ELEMENT medicalHistories(medicalHistory+)>
+<!ELEMENT medicalHistory(pacient, diagnoses*, medications*,treatmentPlans*,
+immunizationDates+, allergies*, radiologyImages*, labTestResults*)>
+<!ELEMENT pacient (#PCDATA)>
+<!ELEMENT diagnoses(diagnose*)>
+<!ELEMENT diagnose (#PCDATA)>
+<!ELEMENT medications(medication*)>
+<!ELEMENT medication(#PCDATA)>
+<!ELEMENT medicationInfo (#PCDATA)>
+<!ELEMENT treatmentPlans(treatmentPlan*)>
+<!ELEMENT treatmentPlan(#PCDATA)>
+<!ELEMENT immunizationDates(immunizationDate*)>
+<!ELEMENT immunizationDate(#PCDATA)>
+<!ELEMENT allergies(allergy*)>
+<!ELEMENT allergy(#PCDATA)>
+<!ELEMENT radiologyImages(radiologyImage*)>
+<!ELEMENT radiologyImage(#PCDATA)>
+<!ELEMENT labTestResults(labTestResult*)>
+<!ELEMENT labTestResult(#PCDATA)>
+<!ATTLIST diagnose id CDATA #REQUIRED>
+<!ATTLIST medication id CDATA #REQUIRED>
+<!ATTLIST medicationInfo id CDATA #REQUIRED>
+<!ATTLIST treatmentPlan duration CDATA #REQUIRED>
+<!ATTLIST treatmentPlan startDate CDATA #REQUIRED>
+<!ATTLIST immunizationDate id CDATA #REQUIRED>
+<!ATTLIST immunizationDate date CDATA #REQUIRED>
+<!ATTLIST allergy id CDATA #REQUIRED>
+<!ATTLIST allergy allergens(Yes | No) "">
+<!ATTLIST radiologyImage id CDATA #REQUIRED>
+<!ATTLIST labTestResult id CDATA #REQUIRED>

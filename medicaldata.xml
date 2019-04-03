@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<EHRs>
+    <EHR>
+        <patient>Anca Pantilie</patient>
+        <diagnoses>
+            <diagnose id="1">Cold</diagnose>
+        </diagnoses>
+        <medications>
+            <medication id="1">Nurofen</medication>
+            <medicationInfo id="1">Nurofen este indicat in tratamentul migrenei, durerilor de cap, de spate, dentare, nevralgiilor,
+             durerilor menstruale, reumatice si musculare, reducerea febrei si simptomelor din raceala si gripa.</medicationInfo>
+            <medication id="2">Theraflu</medication>
+             <medicationInfo id="2">Substantele active din Theraflu Extra raceala si gripa actioneaza impreuna pentru reducerea temporara a
+              simptomelor asociate racelii si gripei, inclusiv:febra si frisoane, dureri musculare şi articulare, dureri de cap</medicationInfo>
+        </medications>
+        <treatmentPlans>
+            <treatmentPlan startDate="01.02.2017" duration="2 weeks">Se administreaza o pastila o data la 6 ore</treatmentPlan>
+        </treatmentPlans>
+        <immunizationDates>
+            <immunizationDate id="1" date="09.08.1997">Polio</immunizationDate>
+            <immunizationDate id="2" date="20.05.2004">Hepatitis A</immunizationDate>
+            <immunizationDate id="3" date="23.12.2006">Hepatitis B</immunizationDate>
+        </immunizationDates>
+        <allergies>
+            <allergy id="1" allergens="Yes">Fish</allergy>
+             <allergy id="2" allergens="Yes">Soy</allergy>
+              <allergy id="2" allergens="Yes">Milk</allergy>
+        </allergies>
+        <radiologyImages>
+            <radiologyImage id="1">rad1.jpg</radiologyImage>
+        </radiologyImages>
+        <labTestResults>
+            <labTestResult id="1" date="28.08.2018"></labTestResult>
+        </labTestResults>
+    </EHR>
+
+     <EHR>
+        <patient>Alina Pana</patient>
+        <diagnoses>
+            <diagnose id="1">Arm surgery</diagnose>
+        </diagnoses>
+        <medications>
+            <medication id="1">Tramadol</medication>
+            <medicationInfo id="1">Tramadolul este indicat pentru tratamentul durerilor de intensitate moderata - severa, acute si cronice.
+            </medicationInfo>
+        </medications>
+        <treatmentPlans>
+            <treatmentPlan startDate="14.09.2018" duration="2 months">2 pills/day</treatmentPlan>
+        </treatmentPlans>
+        <immunizationDates>
+            <immunizationDate id="1" date="28.08.1997">Polio</immunizationDate>
+        </immunizationDates>
+        <allergies>
+            <allergy id="1" allergens="Yes">Nuts</allergy>
+            <allergy id="2" allergens="Yes">Milk</allergy>
+        </allergies>
+        <labTestResults>
+            <labTestResult id="1"></labTestResult>
+        </labTestResults>
+    </EHR>
+</EHRs>

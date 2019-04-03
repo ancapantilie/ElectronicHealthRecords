@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>
+        Electronic Health Records
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container centered">
+            <div class="row">
+              <div class="col-md">
+              </div>
+              <div class="col-md middle">      
+                  <button type="button" class="btn btn-info btn-space" onclick="showAllPacients()">View patients</button>
+                            
+                    <p>Look for medicine information</p>
+                    <input type="text" name="medicineName" id="medicineName" placeholder="medicine name">
+                    <button type="button" class="btn btn-info btn-space" onclick="medicineDescription()">View medication information</button></br>
+
+                    <button type="button" class="btn btn-info btn-space" onclick="noRadiology()">Display patients with no radiography images</button></br>
+
+                    <button type="button" class="btn btn-info btn-space" onclick="allergies()">Display allergies</button></br>
+
+                    <button type="button" class="btn btn-info btn-space" onclick="doneTests()">Display lab tests done in the previous 3 months</button>
+                    
+                    <input type="text" name="immunization" id="immunization" placeholder="Search immunization by date">
+                    <button type="button" class="btn btn-info btn-space" onclick="immunizationsByDate()">Display immunizations</button></br>
+
+                    <button type="button" class="btn btn-info btn-space" onclick="treatmentPlan()">Show treatment plan</button></br>
+
+                    <ul id="radiologyList"></ul>
+                    <div id="display"></div>
+              <div class="col-md">
+              </div>
+            </div>
+          </div>
+</div>   
+</body>
+</html>
